@@ -4,13 +4,26 @@
   "private": true,
   "main": "src/index.ts",
   "types": "src/index.ts",
-  "peerDependencies": {
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "next": "^16.1.6",
     "react": ">=18",
     "react-dom": ">=18"
   },
   "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "25.5.0",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "tailwindcss": "^4",
     "typescript": "^5"
+  },
+  "peerDependencies": {
+    "react": ">=18",
+    "react-dom": ">=18"
   }
 }
